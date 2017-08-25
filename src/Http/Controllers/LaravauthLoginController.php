@@ -1,11 +1,11 @@
 <?php 
 
-namespace Littie\Laravauth\Http\Controllers;
+namespace PaschalDev\Laravauth\Http\Controllers;
 
 use Laravauth;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Littie\Laravauth\Http\Requests\LaravauthLoginRequest;
+use PaschalDev\Laravauth\Http\Requests\LaravauthLoginRequest;
 
 class LaravauthLoginController extends Controller
 {

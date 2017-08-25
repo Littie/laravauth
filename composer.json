@@ -1,13 +1,13 @@
 {
-    "name": "Littie/laravauth",
+    "name": "paschaldev/laravauth",
     "description": "Laravel authentication with a twist.",
     "type": "library",
     "keywords": ["laravauth", "laravel", "2fa", "auth", "nexmo", "twilio", "authentication"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Littie",
-            "email": "polik.palam@gmail.com"
+            "name": "Ezeugwu Paschal",
+            "email": "ezeugwupaschal@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Littie\\Laravauth\\": "src/"
+            "PaschalDev\\Laravauth\\": "src/"
         }
     }
 }

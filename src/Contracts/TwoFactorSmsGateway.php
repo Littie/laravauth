@@ -1,6 +1,6 @@
 <?php 
 
-namespace Littie\Laravauth\Contracts;
+namespace PaschalDev\Laravauth\Contracts;
 
 interface TwoFactorSmsGateway{
 

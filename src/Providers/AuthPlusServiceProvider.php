@@ -1,8 +1,8 @@
 <?php
 
-namespace Littie\Laravauth\Providers;
+namespace PaschalDev\Laravauth\Providers;
 
-use Littie\Laravauth\Laravauth;
+use PaschalDev\Laravauth\Laravauth;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
@@ -31,7 +31,7 @@ class LaravauthServiceProvider extends ServiceProvider
     public function register()
     {
         AliasLoader::getInstance()->alias('Laravauth',
-            'Littie\Laravauth\Facades\Laravauth');
+            'PaschalDev\Laravauth\Facades\Laravauth');
 
         $this->app->bind('laravauth', function () {
             return new Laravauth;

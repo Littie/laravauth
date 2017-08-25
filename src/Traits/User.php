@@ -1,6 +1,6 @@
 <?php
 
-namespace Littie\Laravauth\Traits;
+namespace PaschalDev\Laravauth\Traits;
 
 use Laravauth;
 use Illuminate\Http\Request;

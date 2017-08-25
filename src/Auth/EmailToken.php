@@ -1,14 +1,14 @@
 <?php 
 
-namespace Littie\Laravauth\Auth;
+namespace PaschalDev\Laravauth\Auth;
 
 use Mail;
 use Laravauth;
 use Illuminate\Http\Request;
-use Littie\Laravauth\Traits\User;
-use Littie\Laravauth\Traits\AuthTokens;
-use Littie\Laravauth\Mail\EmailTokenSent;
-use Littie\Laravauth\Contracts\TokenAuthenticator;
+use PaschalDev\Laravauth\Traits\User;
+use PaschalDev\Laravauth\Traits\AuthTokens;
+use PaschalDev\Laravauth\Mail\EmailTokenSent;
+use PaschalDev\Laravauth\Contracts\TokenAuthenticator;
 
 class EmailToken implements TokenAuthenticator{
 

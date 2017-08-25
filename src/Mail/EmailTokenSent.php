@@ -1,6 +1,6 @@
 <?php
 
-namespace Littie\Laravauth\Mail;
+namespace PaschalDev\Laravauth\Mail;
 
 use Laravauth;
 use Illuminate\Bus\Queueable;

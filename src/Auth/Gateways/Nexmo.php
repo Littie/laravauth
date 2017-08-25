@@ -1,9 +1,9 @@
 <?php 
 
-namespace Littie\Laravauth\Auth\Gateways;
+namespace PaschalDev\Laravauth\Auth\Gateways;
 
 use Nexmo\Laravel\Facade\Nexmo as NexmoMessenger;
-use Littie\Laravauth\Contracts\TwoFactorSmsGateway;
+use PaschalDev\Laravauth\Contracts\TwoFactorSmsGateway;
 
 class Nexmo implements TwoFactorSmsGateway{
 

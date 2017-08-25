@@ -1,6 +1,6 @@
 <?php
 
-use Littie\Laravauth\Facades\Laravauth;
+use PaschalDev\Laravauth\Facades\Laravauth;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;

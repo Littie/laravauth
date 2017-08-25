@@ -1,6 +1,6 @@
 <?php 
 
-namespace Littie\Laravauth\Lib\SmsRouter;
+namespace PaschalDev\Laravauth\Lib\SmsRouter;
 
 /**
 * Sms router for Laravel Laravauth Package.
@@ -86,7 +86,7 @@ class SmsRouter
 	/**
      * Fetches the appropriate gateway to use.
      *
-     * @return Littie\Laravauth\Contracts\TwoFactorSmsGateway
+     * @return PaschalDev\Laravauth\Contracts\TwoFactorSmsGateway
      */
 	public function gateway(){
 

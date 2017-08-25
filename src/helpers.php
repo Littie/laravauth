@@ -12,7 +12,7 @@ function laravauth_class_format($string){
 
 function laravauth_class_namespace($namespace_prefix, $class){
 
-	$full_namespace = 'Littie\Laravauth\\'.$namespace_prefix.'\\'.laravauth_class_format($class);
+	$full_namespace = 'PaschalDev\Laravauth\\'.$namespace_prefix.'\\'.laravauth_class_format($class);
 
 	if( ! class_exists($full_namespace) )
 	{
