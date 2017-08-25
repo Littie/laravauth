@@ -30,11 +30,10 @@ class LaravauthServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        AliasLoader::getInstance()->alias('Laravauth', 
+        AliasLoader::getInstance()->alias('Laravauth',
             'PaschalDev\Laravauth\Facades\Laravauth');
 
-        $this->app->bind('laravauth', function()
-        {
+        $this->app->bind('laravauth', function () {
             return new Laravauth;
         });
 
@@ -47,12 +46,12 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function laravauthPublishes(){
-
+    protected function laravauthPublishes()
+    {
         $this->publishes([
-            __DIR__.'/../config/laravauth.php' => config_path('laravauth.php'),
-            __DIR__.'/../resources/views' => resource_path('views/vendor/laravauth'),
-            ]);
+            __DIR__ . '/../config/laravauth.php' => config_path('laravauth.php'),
+            __DIR__ . '/../resources/views'      => resource_path('views/vendor/laravauth'),
+        ]);
     }
 
     /**
@@ -60,10 +59,10 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function laravauthConfig(){
-
-        $this->mergeConfigFrom( __DIR__.'/../config/laravauth.php', 
-            'laravauth' );
+    protected function laravauthConfig()
+    {
+        $this->mergeConfigFrom(__DIR__ . '/../config/laravauth.php',
+            'laravauth');
     }
 
     /**
@@ -71,14 +70,9 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function laravauthRoutes(){
-
-        // This loads the routes when the app is booted thereby 
-        // overriding the initial login routes
-        $this->app->booted(function () {
-
-            require_once __DIR__.'/../routes/web.php';
-        });
+    protected function laravauthRoutes()
+    {
+        $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
     }
 
     /**
@@ -86,9 +80,9 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function laravauthViews(){
-
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 
+    protected function laravauthViews()
+    {
+        $this->loadViewsFrom(__DIR__ . '/../resources/views',
             'laravauth');
     }
 
@@ -97,9 +91,9 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function laravauthMigrations(){
-
-        $this->loadMigrationsFrom(__DIR__.'/../migrations');
+    protected function laravauthMigrations()
+    {
+        $this->loadMigrationsFrom(__DIR__ . '/../migrations');
     }
 
     /**
@@ -109,7 +103,7 @@ class LaravauthServiceProvider extends ServiceProvider
      */
     protected function laravauthHelpers()
     {
-        require_once __DIR__.'/../helpers.php';
+        require_once __DIR__ . '/../helpers.php';
     }
 
     /**
@@ -117,11 +111,11 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerNexmo(){
-
+    public function registerNexmo()
+    {
         $this->app->register(
             'Nexmo\Laravel\NexmoServiceProvider'
-            );
+        );
     }
 
     /**
@@ -129,10 +123,10 @@ class LaravauthServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerTwilio(){
-
+    public function registerTwilio()
+    {
         $this->app->register(
             'Aloha\Twilio\Support\Laravel\ServiceProvider'
-            );
+        );
     }
 }
