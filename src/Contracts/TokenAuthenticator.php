@@ -1,6 +1,6 @@
 <?php
 
-namespace PaschalDev\Laravauth\Contracts;
+namespace Littie\Laravauth\Contracts;
 
 use Illuminate\Http\Request;
 

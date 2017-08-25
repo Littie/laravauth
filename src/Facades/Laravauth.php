@@ -1,6 +1,6 @@
 <?php 
 
-namespace PaschalDev\Laravauth\Facades;
+namespace Littie\Laravauth\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

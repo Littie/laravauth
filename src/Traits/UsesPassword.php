@@ -1,6 +1,6 @@
 <?php 
 
-namespace PaschalDev\Laravauth\Traits;
+namespace Littie\Laravauth\Traits;
 
 use Hash;
 use Laravauth;

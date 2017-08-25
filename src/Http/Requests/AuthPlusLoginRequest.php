@@ -1,6 +1,6 @@
 <?php
 
-namespace PaschalDev\Laravauth\Http\Requests;
+namespace Littie\Laravauth\Http\Requests;
 
 use Auth;
 use Laravauth;

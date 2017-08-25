@@ -1,15 +1,15 @@
 <?php 
 
-namespace PaschalDev\Laravauth\Auth;
+namespace Littie\Laravauth\Auth;
 
 use Laravauth;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
-use PaschalDev\Laravauth\Traits\User;
-use PaschalDev\Laravauth\Traits\AuthTokens;
-use PaschalDev\Laravauth\Traits\UsesPassword;
-use PaschalDev\Laravauth\Lib\SmsRouter\SmsRouter;
-use PaschalDev\Laravauth\Contracts\TokenAuthenticator;
+use Littie\Laravauth\Traits\User;
+use Littie\Laravauth\Traits\AuthTokens;
+use Littie\Laravauth\Traits\UsesPassword;
+use Littie\Laravauth\Lib\SmsRouter\SmsRouter;
+use Littie\Laravauth\Contracts\TokenAuthenticator;
 
 class TwoFactorSms implements TokenAuthenticator{
 

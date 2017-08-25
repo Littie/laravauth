@@ -1,9 +1,9 @@
 <?php 
 
-namespace PaschalDev\Laravauth\Auth\Gateways;
+namespace Littie\Laravauth\Auth\Gateways;
 
 use Aloha\Twilio\Support\Laravel\Facade as TwilioMessenger;
-use PaschalDev\Laravauth\Contracts\TwoFactorSmsGateway;
+use Littie\Laravauth\Contracts\TwoFactorSmsGateway;
 
 class Twilio implements TwoFactorSmsGateway{
 
